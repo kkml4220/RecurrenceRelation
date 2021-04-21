@@ -13,7 +13,7 @@ int main(void)
     {
         aa = 2 * sqrt(a); // 漸化式
         printf("n: %3d, x: %lf\n", n, aa);
-        error = fabsf(aa - a) / fabsf(a); // 相対誤差
+        error = fabs(aa - a) / fabs(a); // 相対誤差
         if (error < EPS) // 相対誤差判定
         {
             printf("収束しました\n");
